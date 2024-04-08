@@ -7,11 +7,22 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      mona: ["var(--font-mona)"],
+      serif: ["var(--font-serif)"],
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        custom: {
+          black: "var(--color-primary)",
+        },
+      },
+      aspectRatio: {
+        card: "273 / 340",
+      },
+      animation: {
+        slide:
+          "slide calc(var(--card-number) * var(--card-speed)) linear infinite",
       },
     },
   },

@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Source_Serif_4 } from "next/font/google";
+import localFont from "next/font/local";
+import clsx from "clsx";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import Header from "./components/Header";
+
+const monaFont = localFont({
+  src: "./fonts/Mona-Sans.woff2",
+  display: "swap",
+  variable: "--font-mona",
+});
+
+const serifFont = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx(monaFont.variable, serifFont.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
