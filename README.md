@@ -1,3 +1,6 @@
+This is the code source of the YouTube video here (video in french only)
+[![Tuto: créer un clone de Dribbble avec Tailwind CSS | React JS | NextJS](https://img.youtube.com/vi/Ag_HS45ujk4/0.jpg)](https://youtu.be/Ag_HS45ujk4)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
